@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-   <div class="container d-flex justify-content-between p-3 align-items-center fixed-top">
+   <div class="container d-flex justify-content-around p-3 align-items-center fixed-top bg-white">
       <div>
          <img src="../../public/img/logo-2.png" alt="Logo Softbox">
       </div>
@@ -28,7 +28,11 @@ export default {
                </ul>
                <div class="icons px-4 fw-bolder">
                   <i class="fa-solid fa-magnifying-glass p-3"></i>
-                  <i class="fa-solid fa-cart-shopping p-3"></i>
+                  <i class="fa-solid fa-cart-shopping p-3 position-relative">
+                     <span class="position-absolute top-5 start-98 translate-middle badge rounded-pill bg-primary">
+                        0
+                     </span>
+                  </i>
                </div>
                <div class="my-btn">Get Started</div>
             </div>
@@ -39,19 +43,23 @@ export default {
 
 <style lang="scss" scoped>
 @use '../styles/variables.scss' as *;
-
 img {
    height: 3rem;
 }
 
 a {
    color: $ottavo-text;
+   border-bottom: solid 2px white;
+
+   &:hover {
+      color: $quinto-text;
+      border-bottom: solid 2px $terzo-border;
+   }
 }
 
-.my-header{
+.my-header {
    position: fixed;
    top: 0;
    left: 0;
 }
-
 </style>
