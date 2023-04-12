@@ -44,9 +44,6 @@ export default {
 section {
    margin: 8rem 0;
 }
-
-
-
 .tip {
    transition: all 0.2s;
 

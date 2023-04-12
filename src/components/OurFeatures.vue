@@ -33,8 +33,8 @@ export default {
          <div class="d-flex flex-wrap">
             <div class="carta shadow m-2 p-3" v-for="(card, i) in cards" key="i">
                <h5>{{ cards[i] }}</h5>
-               <div class="">
-                  <img src="../../public/img/loader.gif" class="">
+               <div>
+                  <img src="../../public/img/loader.gif">
                </div>
             </div>
          </div>

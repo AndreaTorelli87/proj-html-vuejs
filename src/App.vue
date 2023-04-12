@@ -21,6 +21,18 @@ export default {
    },
    data() {
       return {
+         footerLinks: [
+            {
+               title: "Menu",
+               links: ["About Us", "Theme", "Features", "Pricing", "Blog"]
+            }, {
+               title: "About Us",
+               links: ["About Sofbox", "Roadmap", "How it Work", "Team", "News"]
+            }, {
+               title: "Quick Links",
+               links: ["About Sofbox", "Roadmap", "How it Work", "Team", "News"]
+            }
+         ]
       }
    },
    methods: {
@@ -29,23 +41,22 @@ export default {
 </script>
 
 <template>
-   <div class="test">
-      <PageHeader />
-      <main>
-         <PageJumbo />
-         <AboutUs />
-         <OurFeatures />
-         <OurTestimonials />
-         <LatestPosts />
-         <OurContact />
-         <hr />
-      </main>
-      <PageFooter />
-   </div>
+   <PageHeader />
+   <main>
+      <PageJumbo />
+      <AboutUs />
+      <OurFeatures />
+      <OurTestimonials />
+      <LatestPosts />
+      <OurContact />
+      <hr />
+   </main>
+   <PageFooter 
+      :footerLinks="footerLinks"
+   />
 </template>
 
 <style lang="scss">
 @use './styles/general.scss' as *;
 @use "./styles/variables.scss" as *;
-
 </style>
