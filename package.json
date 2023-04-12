@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/josefin-sans": "^4.5.12",
     "bootstrap-icons": "^1.10.4",
     "vue": "^3.2.47"
   },

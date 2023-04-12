@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-   <div class="contenitore d-flex justify-content-between p-5 position-relative my-scroll" id="Jumbo">
+   <div class="contenitore d-flex justify-content-between p-5 position-relative my-scroll" id="Home">
       <div class="w-50">
          <h1>The biggest platform for your growth</h1>
          <p class="py-2">There are many variations of passages of Lorem Ipsum available, but majority have suffered alteration in some form</p>
@@ -25,7 +25,7 @@ export default {
       </div>
       <img src="/img/27-1.png" alt="Image Jumbo" class="h-100 position-absolute">
    </div>
-   <div class="container my-scroll" id="AboutUS">
+   <div class="container my-scroll" id="About us">
       <!-- modificare con row e col per togliere il calc -->
       <section class="d-flex p-4 mt-5">
          <div class="carta d-flex p-3" v-for="card in 3">

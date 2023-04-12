@@ -1,6 +1,8 @@
 @use "bootstrap";
 @use "./variables.scss" as *;
 
+@import "@fontsource/josefin-sans";
+body { font-family: "Josefin Sans", sans-serif; }
 
 .my-btn{
    background-color: $terzo-bg;

@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-   <div class="container my-scroll mb-5" id="OurContact">
+   <div class="container my-scroll mb-5" id="Contact US">
       <div class="text-center py-5">
          <h2>Contact with our team</h2>
          <p>If you planning in developing a product landing.</p>

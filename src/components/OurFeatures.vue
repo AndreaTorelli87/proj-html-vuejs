@@ -47,7 +47,7 @@ export default {
       background-image: url(../../public/img/14.png);
       background-repeat: no-repeat;
       background-size: contain;
-      background-position: left;
+      background-position-x: -14rem;
    }
 
    .carta{

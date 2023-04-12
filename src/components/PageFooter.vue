@@ -20,7 +20,7 @@ export default {
       <div>
          <img src="../../public/img/35.png" alt="Logo Sofbox">
          <p class="card-text">It is a long established fact that a reader will de distracted by the readable.</p>
-         <p class="pt-3">Copyright @ 2018 <a href="#Jumbo">Sofbox</a></p>
+         <p class="pt-3">Copyright @ 2018 <a href="#Home">Sofbox</a></p>
       </div>
       <div class="list ps-5" v-for="(menu, i) in footerLinks" key="i">
          <h4 class="pb-2">{{ menu.title }}</h4>
@@ -29,7 +29,7 @@ export default {
          </ul>
       </div>
       <div class="freccia rounded-circle d-flex align-items-center justify-content-center">
-         <a href="#Jumbo">
+         <a href="#Home">
             <i class="fa-solid fa-chevron-up text-white"></i>
          </a>
       </div>  

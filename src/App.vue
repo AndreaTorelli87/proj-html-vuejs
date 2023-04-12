@@ -21,6 +21,7 @@ export default {
    },
    data() {
       return {
+         headerNav: ["Home", "About us", "Feature", "Testimonials", "Contact US"],
          footerLinks: [
             {
                title: "Menu",
@@ -41,7 +42,9 @@ export default {
 </script>
 
 <template>
-   <PageHeader />
+   <PageHeader 
+      :headerNav="headerNav"
+   />
    <main>
       <PageJumbo />
       <AboutUs />

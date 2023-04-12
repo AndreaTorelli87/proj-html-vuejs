@@ -1,10 +1,12 @@
 <script>
 export default {
    name: "PageHeader",
+   props: {
+      headerNav: Array,
+   },
    methods: {
    }
 }
-
 </script>
 
 <template>
@@ -19,12 +21,8 @@ export default {
                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-               <ul class="navbar-nav">
-                  <li class="nav-item"><a class="nav-link" href="#Jumbo">Home</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#AboutUS">About Us</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#Feature">Feature</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#Testimonials">Testimonials</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#OurContact">Contact US</a></li>
+               <ul class="navbar-nav" v-for="(link, i) in headerNav" key="i">
+                  <li class="nav-item"><a class="py-2 mx-2 text-decoration-none" :href="'#' + link">{{ link }}</a></li>
                </ul>
                <div class="icons px-4 fw-bolder">
                   <i class="fa-solid fa-magnifying-glass p-3"></i>
@@ -52,6 +50,7 @@ img {
 a {
    color: $ottavo-text;
    border-bottom: solid 2px white;
+   transition: all 0.2s;
 
    &:hover {
       color: $quinto-text;
