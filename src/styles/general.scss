@@ -5,7 +5,24 @@
 .my-btn{
    background-color: $terzo-bg;
    color: $primo-text;
+   border: solid 1px transparent ;
    padding: 0.6rem 1rem;
    border-radius: 0.2rem;
    display: inline-block;
+   cursor: pointer;
+   transition: all 0.2s;
+
+   &:hover{
+      background-color: $quarto-bg;
+      color: $primo-text;
+      border: solid 1px $quarto-border;
+   }
+}
+
+.my-scroll{
+   scroll-margin-top: 6rem;
+}
+
+ul{
+   list-style: none;
 }
