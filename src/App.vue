@@ -31,12 +31,15 @@ export default {
 <template>
    <div class="test">
       <PageHeader />
-      <PageJumbo />
-      <AboutUs />
-      <OurFeatures />
-      <OurTestimonials />
-      <LatestPosts />
-      <OurContact />
+      <main>
+         <PageJumbo />
+         <AboutUs />
+         <OurFeatures />
+         <OurTestimonials />
+         <LatestPosts />
+         <OurContact />
+         <hr />
+      </main>
       <PageFooter />
    </div>
 </template>

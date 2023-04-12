@@ -18,7 +18,7 @@ export default {
          <h2>Latest Posts</h2>
          <p>If you planning in developing a product landing.</p>
       </div>
-      <div class="d-flex py-5">
+      <div class="d-flex pt-5">
          <div class="card position-relative p-2 mx-3" v-for="(card, i) in cards" key="i">
             <img :src="`../../public/img/${card}.jpg`">
             <div class="card-body">

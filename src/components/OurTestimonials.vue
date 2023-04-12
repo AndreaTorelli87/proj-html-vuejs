@@ -8,8 +8,8 @@ export default {
 </script>
 
 <template>
-   <div class="sfondo my-5" id="Testimonials">
-      <div class="container my-scroll">
+   <div class="sfondo my-5 my-scroll" id="Testimonials">
+      <div class="container">
          <div class="text-center py-5">
             <h2>Our Testimonials</h2>
             <p>If you are planning on developing a product landing app or website, <br /> take a look at this beautiful-crafted</p>
