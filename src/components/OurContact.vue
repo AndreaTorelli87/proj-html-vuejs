@@ -1,7 +1,10 @@
 <script>
 export default {
    name: "OurContact",
-   methods: {
+   data() {
+      return {
+         icons: ["fa-facebook-f", "fa-twitter", "fa-github", "fa-instagram"]
+      }
    }
 }
 
@@ -15,21 +18,18 @@ export default {
       </div>
       <div class="d-flex py-4">
          <div class="pe-5">
-            <img src="../../public/img/StaticMapService.GetMapIma.png" alt="Mappa">
+            <img src="/img/StaticMapService.GetMapIma.png" alt="Mappa">
          </div>
          <div>
-            <img src="../../public/img/35.png" alt="Logo Sofbox" class="pb-5">
+            <img src="/img/35.png" alt="Logo Sofbox" class="pb-5">
             <h5 class="pb-3">9840 Shore st. Fond Du Lac, WI 54935</h5>
             <span>0 1223 456 789</span>
             <br />
             <span>mail@sofbox.com</span>
             <div class="py-5">
-               <i class="fa-brands fa-facebook-f"></i>
-               <i class="fa-brands fa-twitter"></i>
-               <i class="fa-brands fa-github"></i>
-               <i class="fa-brands fa-instagram"></i>
+               <i v-for="icon in icons" :class="`fa-brands ${icon} cp`"></i>
             </div>
-            <h4>Get in Touch</h4>
+            <h4 class="pb-2">Get in Touch</h4>
             <div>
                <div class="mb-4 d-flex">
                   <div>
@@ -61,5 +61,10 @@ export default {
    width: 40px;
    text-align: center;
    color: $quinto-text;
+   transition: all 0.2s;
+
+   &:hover {
+      scale: 1.2;
+   }
 }
 </style>

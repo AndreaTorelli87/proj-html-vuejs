@@ -3,13 +3,10 @@ export default {
    name: "LatestPosts",
    data() {
       return {
-         cards: [19,18,17]
+         cards: [19, 18, 17]
       }
-   },
-   methods: {
    }
 }
-
 </script>
 
 <template>
@@ -19,8 +16,8 @@ export default {
          <p>If you planning in developing a product landing.</p>
       </div>
       <div class="d-flex pt-5">
-         <div class="card position-relative p-2 mx-3" v-for="(card, i) in cards" key="i">
-            <img :src="`../../public/img/${card}.jpg`">
+         <div class="card position-relative p-2 mx-3" v-for="card in cards">
+            <img :src="`/img/${card}.jpg`">
             <div class="card-body">
                <h5 class="card-title">Life Lack Meaning</h5>
                <p class="card-text">It is a long established fact that a reader will de distracted by the readable.</p>
@@ -33,12 +30,14 @@ export default {
 
 <style lang="scss" scoped>
 @use '../styles/variables.scss' as *;
-.card{
+
+.card {
    width: calc(100% / 3);
 }
-.etichetta{
+
+.etichetta {
    background-color: $primo-bg;
-   color: $ottavo-text;
+   color: $quarto-text;
    padding: 0.6rem 1rem;
    border-radius: 0.2rem;
    top: 1rem;

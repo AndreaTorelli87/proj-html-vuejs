@@ -3,47 +3,38 @@ export default {
    name: "PageJumbo",
    data() {
       return {
-         list: [
-            "SEO",
-            "SEM",
-            "Website Strategy",
-            "Social management"
-         ]
+         list: ["SEO", "SEM", "Website Strategy", "Social management"]
       }
-   },
-   methods: {
    }
 }
 </script>
 
 <template>
    <div class="contenitore d-flex justify-content-between p-5 position-relative my-scroll" id="Home">
-      <div class="w-50">
+      <div class="w-50 pb-5">
          <h1>The biggest platform for your growth</h1>
-         <p class="py-2">There are many variations of passages of Lorem Ipsum available, but majority have suffered alteration in some form</p>
-         <div class="my-btn">Read More</div>
+         <p class="py-2">There are many variations of passages of Lorem Ipsum available, but majority have suffered
+            alteration in some form</p>
+         <div class="my-btn mt-4">Read More</div>
       </div>
-      <img src="/img/27-1.png" alt="Image Jumbo" class="h-100 position-absolute">
+      <img src="/img/27-1.png" alt="Image Jumbo" class="position-absolute">
    </div>
-   <div class="container my-scroll" id="About us">
-      <!-- modificare con row e col per togliere il calc -->
-      <section class="d-flex p-4 mt-5">
-         <div class="carta d-flex p-3" v-for="card in 3">
-            <div class="w-50">
-               <img src="../../public/img/24.png" alt="logo monitor" class="w-100 p-2">
-            </div>
-            <div class="ps-2">
-               <h3>Online Marketing</h3>
-               <p>It is a long enstablished fact that a reader will be distracted.</p>
-               <ul>
-                  <li v-for="item in list">
-                     <i class="fa-solid fa-check"></i>
-                     {{ item }}
-                  </li>
-               </ul>
-            </div>
+   <div class="container my-scroll d-flex p-5 my-3" id="About us">
+      <div class="carta d-flex pe-5" v-for="card in 3">
+         <div class="w-25 text-end">
+            <img src="/img/24.png" alt="logo monitor" class="w-100">
          </div>
-      </section>
+         <div class="ps-2">
+            <h3>Online Marketing</h3>
+            <p>It is a long enstablished fact that a reader will be distracted.</p>
+            <ul class="p-0">
+               <li v-for="item in list">
+                  <i class="fa-solid fa-check pe-2"></i>
+                  {{ item }}
+               </li>
+            </ul>
+         </div>
+      </div>
    </div>
 </template>
 
@@ -51,9 +42,18 @@ export default {
 @use '../styles/variables.scss' as *;
 
 .contenitore {
-   max-width: 80rem;
-   margin: 6rem auto 0;
+   max-width: 90rem;
+   margin: 7rem auto;
    background-color: $secondo-bg;
+
+   img {
+      top: 2rem;
+      right: 3rem;
+   }
+}
+
+h1 {
+   font-size: 4rem;
 }
 
 .carta {
@@ -62,10 +62,4 @@ export default {
 
 .fa-check {
    color: $quinto-text;
-}
-
-img{
-   top: 2rem;
-   right: 3rem;
-}
-</style>
+}</style>
